@@ -81,4 +81,8 @@ const updateTotal = () => {
     getInputValue("total-tax");
   document.getElementById("total").innerText = grandTotal.toFixed(2);
 };
+// upcomming features message function
+const alertMessage = () => {
+  alert("This Feature Will Be Available Soon !!! Thanks for Your Support & Cooperation  !!!")
+};
 loadProducts();

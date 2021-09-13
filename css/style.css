@@ -12,19 +12,23 @@ body {
   outline: none;
   border: none;
 }
-.search-box {
+.form-control{
   border: 1px solid rgb(3, 118, 211);
-  width: 205px;
+  width:100px;
+}
+/* .search-box {
+  border: 1px solid rgb(3, 118, 211);
+  width:100px;
   border-radius: 5px;
   margin: auto;
   margin-top: 50px;
   border-right: none;
-}
-.search-button {
+} */
+/* .search-button {
   padding: 10px 50px;
   border-radius: 25px;
   margin-left: 20px;
-}
+} */
 #all-products {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -42,6 +46,7 @@ body {
   height: 450px;
   border-radius: 15px;
   border: 1px solid rgba(100, 98, 98, 0.233);
+  background-image: url(/images/texture.png)
 }
 .single-product:hover {
   box-shadow: 4px 4px 7px rgb(133, 150, 226);

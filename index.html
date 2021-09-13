@@ -23,12 +23,15 @@
   </header>
   <main class="main">
     <div class="search-field">
-      <h1 style="text-align:center">Search Your Dream Product from <span style="color:#337ab7">Dream Store</span></h1>
-      <div class="search-box">
-        <input id="input-field" class="search-field" type="text" />
-        <button type="button" class="btn btn-primary search-button" data-toggle="button" aria-pressed="false"
-          autocomplete="off" id="search-btn" onclick="loadProducts()" style="margin-left: 25px;">
-          Search</button>
+      <h1 style="text-align:center">Search Your <span style="color:#337ab7">Dream Product</span> from <span
+          style="color:#337ab7">Dream Store</span></h1>
+      <br>
+      <div class="form-inline" style="text-align: center;">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search Items">
+        </div>
+        <button type="button" class="btn btn-primary" onclick="alertMessage()">Search <i class="fa fa-search"
+            aria-hidden="true" style="color:#ffffff"></i></button>
       </div>
     </div>
     <br>
@@ -50,9 +53,9 @@
               </tr>
             </thead>
             <tbody>
-              <tr style="color:#337ab7">
+              <tr style="color:#337ab7" class="font-weight-bold">
                 <th>Total Added-Products:</th>
-                <td> <span id="total-Products">0</span> Item(s)</td>
+                <td> <strong><span id="total-Products">0</span> Item(s)</strong></td>
                 <td></td>
                 <td></td>
               </tr>
@@ -76,13 +79,13 @@
               </tr>
               <tr style="color:#337ab7">
                 <th scope="row">Total</th>
-                <td colspan="2">$ <span id="total">0</span></td>
+                <td colspan="2">$ <strong><span id="total">0</span></strong></td>
                 <td></td>
               </tr>
             </tbody>
           </table>
           <div class="parces text-center">
-            <button class="btn btn-success text-center">Buy Now</button>
+            <button class="btn btn-success text-center" onclick="alertMessage()">Buy Now</button>
           </div>
         </div>
       </div>
