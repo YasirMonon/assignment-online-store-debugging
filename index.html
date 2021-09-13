@@ -23,15 +23,16 @@
   </header>
   <main class="main">
     <div class="search-field">
+      <h1 style="text-align:center">Search Your Dream Product from <span style="color:#337ab7">Dream Store</span></h1>
       <div class="search-box">
         <input id="input-field" class="search-field" type="text" />
         <button type="button" class="btn btn-primary search-button" data-toggle="button" aria-pressed="false"
-          autocomplete="off" id="search-btn" onclick="loadProducts()">
-          Search
-        </button>
+          autocomplete="off" id="search-btn" onclick="loadProducts()" style="margin-left: 25px;">
+          Search</button>
       </div>
     </div>
-    <div class="row">
+    <br>
+    <div class="row" style="padding-left: 20px;">
       <div class="col-md-9 col-lg-9 col-sm-7">
         <div id="all-products" class="">
         </div>
@@ -40,7 +41,7 @@
         <div class="cart" id="my-cart">
           <table class="table">
             <thead>
-              <h1>My-Cart</h1>
+              <h1 style="color:#337ab7">My Cart Items <i class="fa fa-shopping-cart" aria-hidden="true"></i></h1>
               <tr>
                 <th scope="col"></th>
                 <th scope="col"></th>
@@ -49,9 +50,9 @@
               </tr>
             </thead>
             <tbody>
-              <tr>
+              <tr style="color:#337ab7">
                 <th>Total Added-Products:</th>
-                <td> <span id="total-Products">0</span></td>
+                <td> <span id="total-Products">0</span> Item(s)</td>
                 <td></td>
                 <td></td>
               </tr>
@@ -73,7 +74,7 @@
                 <td></td>
                 <td></td>
               </tr>
-              <tr>
+              <tr style="color:#337ab7">
                 <th scope="row">Total</th>
                 <td colspan="2">$ <span id="total">0</span></td>
                 <td></td>
@@ -81,7 +82,7 @@
             </tbody>
           </table>
           <div class="parces text-center">
-            <button class="btn btn-primary text-center"><i class="fa fa-shopping-cart"> </i> Buy Now</button>
+            <button class="btn btn-success text-center">Buy Now</button>
           </div>
         </div>
       </div>

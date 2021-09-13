@@ -14,7 +14,7 @@ body {
 }
 .search-box {
   border: 1px solid rgb(3, 118, 211);
-  width: 281px;
+  width: 205px;
   border-radius: 5px;
   margin: auto;
   margin-top: 50px;
@@ -37,12 +37,16 @@ body {
 }
 .single-product {
   padding: 10px;
-  transition: 0.6s;
+  transition: 0.5s;
+  margin: 5px;
+  height: 450px;
+  border-radius: 15px;
+  border: 1px solid rgba(100, 98, 98, 0.233);
 }
 .single-product:hover {
-  box-shadow: 4px 4px 7px gray;
+  box-shadow: 4px 4px 7px rgb(133, 150, 226);
   border-radius: 10px;
-  border: 1px solid cyan;
+  border: 1px solid rgb(62, 64, 223);
 }
 .product-image {
   width: 150px;
@@ -52,8 +56,8 @@ body {
   width: 350px;
   /* border: 1px solid green; */
   padding: 10px;
-  box-shadow: 10px 10px 20px gray;
-  border-radius: 5px;
+  box-shadow: 10px 10px 20px rgb(133, 150, 226);
+  border-radius: 10px;
   margin-right: 30px;
   position: fixed;
 }

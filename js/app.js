@@ -16,15 +16,14 @@ const showProducts = (products) => {
       <div>
     <img class="product-image" src=${image}></img>
       </div>
-      <h3>${product.title}</h3>
+      <h3 style="color:#337ab7">${product.title}</h3>
       <p>Category: ${product.category}</p>
-      <h2>Price: $ ${product.price}</h2>
-      <h5>Total-Rating : ${count}   </h5>	
-      <h6>Average-rating: ${rate}</h6>
+      <h2 style="color:#337ab7">Price: $ ${product.price}</h2>
+      <h5>Average-Rating : ${rate} </h5>
+      <h5>Total-Rating <i class="fa fa-star" style="color:#337ab7"; aria-hidden="true"></i> : ${count} </h5>	
       
-      
-      <button onclick="addToCart(${product.id},${product.price})" id="addToCart-btn" class="buy-now btn btn-success"><i class="fa fa-shopping-cart"> </i>  add to cart</button>
-      <button id="details-btn" class="btn btn-danger"><i class="fa fa-info-circle"> </i> Details</button></div>
+      <button onclick="addToCart(${product.id},${product.price})" id="addToCart-btn" class="buy-now btn btn-success"><i class="fa fa-shopping-cart"></i>   Add to Cart</button>
+      <button id="details-btn" class="btn btn-primary"><i class="fa fa-info-circle"> </i> Details</button></div>
       `;
     document.getElementById("all-products").appendChild(div);
   }
