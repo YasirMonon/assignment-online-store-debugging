@@ -6,7 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Dream Store</title>
+
+  <!-- custom stylesheet  -->
   <link rel="stylesheet" href="./css/style.css" />
+  <!-- favicon -->
+  <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon">
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
     integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" />
@@ -22,6 +26,7 @@
   <header>
   </header>
   <main class="main">
+    <!--  adding site name button and search input field  -->
     <div class="search-field">
       <h1 style="text-align:center">Search Your <span style="color:#337ab7">Dream Product</span> from <span
           style="color:#337ab7">Dream Store</span></h1>
@@ -30,16 +35,20 @@
         <div class="form-group">
           <input type="text" class="form-control" placeholder="Search Items">
         </div>
+        <!--  alert function added on button -->
         <button type="button" class="btn btn-primary" onclick="alertMessage()">Search <i class="fa fa-search"
             aria-hidden="true" style="color:#ffffff"></i></button>
       </div>
     </div>
     <br>
+    <!--  div for showing product details -->
     <div class="row" style="padding-left: 20px;">
       <div class="col-md-9 col-lg-9 col-sm-7">
         <div id="all-products" class="">
         </div>
       </div>
+
+      <!-- for showing my-cart details -->
       <div class="col-md-3 col-lg-3 col-sm-5 cart-main">
         <div class="cart" id="my-cart">
           <table class="table">
@@ -98,3 +107,11 @@
 </body>
 
 </html>
+
+
+
+<!-- ============== if any problem occurs, requesting to visit my netlify live link below ===========
+
+=========================== https://assignment-debugging.netlify.app/ =========================
+
+======================= thanks a lot for your precious time , best regards ======================== -->
